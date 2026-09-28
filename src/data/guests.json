@@ -1,10 +1,13 @@
 {
   "guests": [
-    {
-      "id": "ornek_misafir",
-      "name": "",
-      "nationality": "",
-      "notes": ""
-    }
+    { "id": "selin", "name": "Selin Aydın", "nationality": "TR", "color": "#bc5a45" },
+    { "id": "selin_aydemir", "name": "Selin Aydemir", "nationality": "TR", "color": "#84a59d" },
+    { "id": "anna", "name": "Anna Weber", "nationality": "DE", "color": "#4f86a6" },
+    { "id": "kerem", "name": "Kerem Uslu", "nationality": "TR", "color": "#6d7f4b" },
+    { "id": "deniz", "name": "Deniz Karaca", "nationality": "TR", "color": "#c29a4f" },
+    { "id": "tolga", "name": "Tolga Er", "nationality": "TR", "color": "#5c2f25" },
+    { "id": "mark", "name": "Mark Dawson", "nationality": "GB", "color": "#354f52" },
+    { "id": "leyla", "name": "Leyla Demirci", "nationality": "TR", "color": "#d4a19b" },
+    { "id": "hans", "name": "Hans Keller", "nationality": "CH", "color": "#8f3f30" }
   ]
 }

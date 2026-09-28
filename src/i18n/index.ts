@@ -14,9 +14,28 @@ export function setLanguage(lang: Language) {
   current = lang;
 }
 
-// Anahtarı verilen yazıyı döndürür. Anahtar bulunamazsa anahtarın kendisi
-// görünür; böylece eksik çeviri ekranda hemen fark edilir.
-export function t(key: TextKey): string {
+export function getLanguage(): Language {
+  return current;
+}
+
+// Anahtarı verilen yazıyı döndürür. {ad} gibi yer tutucular "vars" ile doldurulur.
+// Anahtar bulunamazsa anahtarın kendisi görünür; eksik çeviri hemen fark edilir.
+export function t(key: TextKey | string, vars?: Record<string, string | number>): string {
   const table: Record<string, string> = languages[current];
-  return table[key] ?? key;
+  let text = table[key] ?? key;
+  if (vars) for (const [k, v] of Object.entries(vars)) text = text.split(`{${k}}`).join(String(v));
+  return text;
+}
+
+// "2008-10-06" → "Pazartesi, 6 Ekim 2008"
+export function formatDate(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number);
+  const weekday = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+  return `${t(`weekday.${weekday}`)}, ${d} ${t(`month.${m}`)} ${y}`;
+}
+
+// "2008-10-06" → "06.10.2008"
+export function shortDate(iso: string): string {
+  const [y, m, d] = iso.split('-');
+  return `${d}.${m}.${y}`;
 }

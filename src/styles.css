@@ -86,6 +86,8 @@ body {
 }
 
 .screen {
+  position: relative;
+  container-type: inline-size;
   width: min(100vw, calc(100vh * 16 / 9));
   aspect-ratio: 16 / 9;
   display: grid;
@@ -136,4 +138,502 @@ body {
   font-family: 'IBM Plex Mono', 'Courier New', monospace;
   font-size: 8px;
   font-weight: 600;
+}
+
+.hook-text {
+  fill: var(--sage-light);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 7px;
+}
+
+/* ---------- Etkileşim ---------- */
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  filter: brightness(1.08) drop-shadow(0 0 3px rgba(255, 227, 163, 0.9));
+}
+
+.returned-key {
+  animation: key-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes key-pulse {
+  50% {
+    filter: drop-shadow(0 0 5px var(--sun));
+  }
+}
+
+/* Paneller ekran genişliğine göre ölçeklenir: 1cqw = ekran genişliğinin %1'i. */
+.screen button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.guest-ui {
+  position: absolute;
+  inset: 0;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1.05cqw;
+  color: var(--ink);
+  pointer-events: none;
+}
+
+.guest-ui > * {
+  pointer-events: auto;
+}
+
+.guest-counter {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  padding: 0.3em 0.7em;
+  border-radius: 1em;
+  background: var(--sage-dark);
+  color: var(--parchment);
+  font-size: 0.85em;
+}
+
+.bubble {
+  position: absolute;
+  top: 7%;
+  left: 57%;
+  width: 26%;
+  padding: 0.7em 1em;
+  border-radius: 0.8em;
+  background: var(--parchment);
+  box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.18);
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  left: -0.7em;
+  top: 1.2em;
+  border: 0.4em solid transparent;
+  border-right: 0.5em solid var(--parchment);
+}
+
+.bubble strong {
+  display: block;
+  margin-bottom: 0.3em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: var(--sage-dark);
+}
+
+.bubble p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.key-note {
+  position: absolute;
+  top: 7%;
+  left: 38%;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  background: var(--brass-light);
+  color: var(--wood-dark);
+  font-size: 0.9em;
+}
+
+.replies {
+  position: absolute;
+  left: 57%;
+  bottom: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  width: 26%;
+}
+
+.replies button {
+  text-align: left;
+  padding: 0.55em 0.9em;
+  border: 0.1em solid var(--sage-dark);
+  border-radius: 0.5em;
+  background: var(--parchment);
+  color: var(--ink);
+}
+
+.replies button:hover {
+  background: var(--sun);
+}
+
+.holding-note {
+  position: absolute;
+  right: 16.5%;
+  top: 6%;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4em;
+  background: var(--sun);
+  color: var(--wood-dark);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1cqw;
+}
+
+/* ---------- Sistem penceresi ---------- */
+.sistem {
+  position: absolute;
+  left: 1.5%;
+  top: 4%;
+  width: 52%;
+  height: 58%;
+  display: flex;
+  flex-direction: column;
+  background: var(--beige);
+  border: 0.15cqw solid var(--beige-deep);
+  border-radius: 0.5cqw;
+  box-shadow: 0 1cqw 3cqw rgba(0, 0, 0, 0.35);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1cqw;
+  color: var(--ink);
+  overflow: hidden;
+}
+
+.sistem-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4em 0.8em;
+  background: linear-gradient(var(--sea), var(--sea-deep));
+  color: var(--screen-text);
+  font-weight: 600;
+}
+
+.sistem-close {
+  padding: 0.15em 0.7em;
+  border: 0.1em solid var(--screen-text);
+  border-radius: 0.3em;
+  background: transparent;
+  color: var(--screen-text);
+}
+
+.sistem-tabs {
+  display: flex;
+  gap: 0.3em;
+  padding: 0.5em 0.8em 0;
+  border-bottom: 0.1em solid var(--beige-deep);
+}
+
+.sistem-tabs button {
+  padding: 0.35em 0.9em;
+  border: 0.1em solid var(--beige-deep);
+  border-bottom: none;
+  border-radius: 0.3em 0.3em 0 0;
+  background: var(--beige-dark);
+  color: var(--ink);
+}
+
+.sistem-tabs button.active {
+  background: var(--parchment);
+  font-weight: 600;
+}
+
+.sistem-body {
+  flex: 1;
+  overflow: auto;
+  background: var(--parchment);
+}
+
+.sistem table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sistem th,
+.sistem td {
+  padding: 0.45em 0.8em;
+  text-align: left;
+  border-bottom: 0.1em solid var(--parchment-shade);
+}
+
+.sistem th {
+  position: sticky;
+  top: 0;
+  background: var(--beige);
+  font-weight: 600;
+}
+
+.sistem tbody tr {
+  cursor: pointer;
+}
+
+.sistem tbody tr:hover {
+  background: var(--sky);
+}
+
+.sistem tbody tr.selected {
+  background: var(--aegean);
+}
+
+.sistem tbody tr.muted {
+  color: var(--beige-deep);
+  cursor: default;
+}
+
+.sistem-rooms {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em;
+  padding: 0.8em;
+}
+
+.room-cell {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4em 0.6em;
+  border-radius: 0.3em;
+  border-left: 0.35em solid var(--leaf);
+  background: var(--wall-light);
+  font-size: 0.9em;
+}
+
+.room-dolu {
+  border-left-color: var(--sea);
+}
+
+.room-kirli {
+  border-left-color: var(--brass);
+}
+
+.room-bakim {
+  border-left-color: var(--terracotta);
+}
+
+.sistem-footer {
+  display: flex;
+  align-items: center;
+  min-height: 2.8em;
+  padding: 0.5em 0.8em;
+  background: var(--beige);
+  border-top: 0.1em solid var(--beige-deep);
+}
+
+.sistem-action {
+  padding: 0.4em 1em;
+  border: none;
+  border-radius: 0.3em;
+  background: var(--sage-dark);
+  color: var(--parchment);
+}
+
+.sistem-action:hover {
+  background: var(--sage);
+}
+
+.sistem-msg {
+  color: var(--sage-dark);
+  font-weight: 600;
+}
+
+.sistem-hint {
+  color: var(--beige-deep);
+}
+
+/* ---------- Kâğıt paneller ---------- */
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31, 43, 39, 0.55);
+}
+
+.paper {
+  width: 46%;
+  max-height: 92%;
+  overflow: auto;
+  padding: 2.2cqw 2.6cqw;
+  background: var(--parchment);
+  border-radius: 0.4cqw;
+  box-shadow: 0 1cqw 3cqw rgba(0, 0, 0, 0.35);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1.05cqw;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.paper h1 {
+  margin: 0 0 0.6em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  color: var(--sage-dark);
+}
+
+.paper h2 {
+  margin: 1.2em 0 0.3em;
+  font-size: 0.85em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.paper-kicker {
+  margin: 0;
+  font-size: 0.85em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--beige-deep);
+}
+
+.paper-note {
+  margin: 0;
+  padding-left: 0.8em;
+  border-left: 0.25em solid var(--sage-light);
+}
+
+.paper ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.paper-hint {
+  margin-top: 1.2em;
+  font-size: 0.85em;
+  color: var(--beige-deep);
+}
+
+.paper-button {
+  margin-top: 1.2em;
+  padding: 0.6em 1.6em;
+  border: none;
+  border-radius: 0.4em;
+  background: var(--terracotta);
+  color: var(--parchment);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+}
+
+.paper-button:hover {
+  background: var(--terracotta-dark);
+}
+
+.paper-actions {
+  display: flex;
+  align-items: baseline;
+  gap: 1.2em;
+}
+
+/* Tutanak: masanın sağ üstüne düşen küçük kâğıt */
+.slip {
+  position: absolute;
+  top: 34%;
+  right: 3%;
+  width: 26%;
+  padding: 1.2cqw 1.4cqw;
+  background: var(--wall-light);
+  border-top: 0.5cqw solid var(--terracotta);
+  box-shadow: 0 0.6cqw 2cqw rgba(0, 0, 0, 0.3);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1cqw;
+  color: var(--ink);
+  transform: rotate(1.5deg);
+}
+
+.slip-ok {
+  border-top-color: var(--leaf);
+}
+
+.slip h3 {
+  margin: 0 0 0.5em;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: var(--terracotta);
+}
+
+.slip-ok h3 {
+  color: var(--leaf-dark);
+}
+
+.slip ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.slip .penalty {
+  margin: 0.4em 0 0;
+  color: var(--terracotta-dark);
+  font-weight: 600;
+}
+
+.slip .paper-button {
+  margin-top: 0.8em;
+}
+
+/* Gün sonu */
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.summary-grid div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6em 0.9em;
+  border-radius: 0.4em;
+  background: var(--wall-light);
+}
+
+.summary-grid strong {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.8em;
+  color: var(--sage-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.meter {
+  display: grid;
+  grid-template-columns: 13em 1fr 2.5em;
+  align-items: center;
+  gap: 0.8em;
+  margin: 0.4em 0;
+}
+
+.meter strong {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.meter-track {
+  height: 0.7em;
+  border-radius: 0.35em;
+  background: var(--parchment-shade);
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+}
+
+.meter-good {
+  background: var(--leaf);
+}
+
+.meter-mid {
+  background: var(--brass);
+}
+
+.meter-bad {
+  background: var(--terracotta);
+}
+
+.summary-errors li {
+  margin-bottom: 0.3em;
+}
+
+.summary-errors em {
+  color: var(--terracotta-dark);
+  font-style: normal;
+}
+
+.paper-summary {
+  width: 60%;
 }

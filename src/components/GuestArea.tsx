@@ -2,8 +2,8 @@ import { t } from '../i18n';
 import { PottedPlant, Vine } from './art';
 
 // Orta bölge: desk'e gelen misafir. Arkada resepsiyonun karşı duvarı.
-// Misafir şimdilik yer tutucu bir siluet.
-export function GuestArea() {
+// Misafir, kendi renginde sade bir siluet; masa boşken kesik çizgili yer tutucu.
+export function GuestArea({ guestColor }: { guestColor?: string }) {
   return (
     <svg className="zone-svg" viewBox="0 0 1280 230" preserveAspectRatio="xMidYMid slice" role="img" aria-label={t('guest.label')}>
       <title>{t('guest.label')}</title>
@@ -85,19 +85,31 @@ export function GuestArea() {
       <Vine x={300} y={0} length={14} seed={31} />
       <Vine x={980} y={0} length={18} seed={33} />
 
-      {/* Misafir yer tutucusu */}
-      <g transform="translate(640 34) scale(0.9)">
-        <path d="M-96 220 Q-92 104 0 96 Q92 104 96 220 Z" fill="url(#ga-guest)" />
-        <circle cx="0" cy="46" r="38" fill="url(#ga-guest)" />
-        <g fill="none" stroke="var(--parchment)" strokeWidth="2" strokeDasharray="6 6" opacity="0.9">
-          <circle cx="0" cy="46" r="38" />
-          <path d="M-96 220 Q-92 104 0 96 Q92 104 96 220" />
+      {guestColor ? (
+        <g transform="translate(640 34) scale(0.9)" className="guest-figure">
+          <path d="M-96 220 Q-92 104 0 96 Q92 104 96 220 Z" fill={guestColor} />
+          <path d="M-96 220 Q-92 104 0 96 Q-40 120 -52 220 Z" fill="var(--shadow)" opacity="0.15" />
+          <path d="M-20 98 L0 132 L20 98" fill="var(--parchment)" opacity="0.85" />
+          <rect x="-11" y="74" width="22" height="26" fill="var(--rose)" />
+          <circle cx="0" cy="46" r="38" fill="var(--rose)" />
+          <path d="M-38 44 Q-36 4 0 6 Q36 4 38 44 Q30 22 0 20 Q-30 22 -38 44 Z" fill={guestColor} opacity="0.9" />
         </g>
-      </g>
-      <rect x="470" y="198" width="340" height="24" rx="12" fill="var(--sage-dark)" opacity="0.75" />
-      <text x="640" y="215" textAnchor="middle" className="hint-text">
-        {t('guest.empty')}
-      </text>
+      ) : (
+        <>
+          <g transform="translate(640 34) scale(0.9)">
+            <path d="M-96 220 Q-92 104 0 96 Q92 104 96 220 Z" fill="url(#ga-guest)" />
+            <circle cx="0" cy="46" r="38" fill="url(#ga-guest)" />
+            <g fill="none" stroke="var(--parchment)" strokeWidth="2" strokeDasharray="6 6" opacity="0.9">
+              <circle cx="0" cy="46" r="38" />
+              <path d="M-96 220 Q-92 104 0 96 Q92 104 96 220" />
+            </g>
+          </g>
+          <rect x="470" y="198" width="340" height="24" rx="12" fill="var(--sage-dark)" opacity="0.75" />
+          <text x="640" y="215" textAnchor="middle" className="hint-text">
+            {t('guest.empty')}
+          </text>
+        </>
+      )}
     </svg>
   );
 }

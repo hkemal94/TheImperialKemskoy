@@ -1,9 +1,14 @@
 {
   "dialogues": [
     {
-      "id": "ornek_diyalog",
-      "guest": "ornek_misafir",
-      "lines": []
-    }
+      "id": "mudur_gun_01",
+      "tr": "Günaydın. Sezonun son haftasına girdik, otel yavaş yavaş boşalıyor. Bugün yalnızca girişler ve çıkışlar var. Kimseye anahtar vermeden önce rezervasyonunu Sistem'den kontrol et; tarihi tutmayana oda yok. Çıkan misafirin anahtarı kendi kancasına asılır."
+    },
+    { "id": "selin_giris", "tr": "Merhaba, Selin Aydın adına üç gecelik bir rezervasyonum olacaktı." },
+    { "id": "mark_cikis", "tr": "Good morning. Çıkış yapmak istiyorum, oda 204. Anahtarı bırakıyorum." },
+    { "id": "kerem_giris", "tr": "Kerem Uslu, suit oda ayırtmıştım. Biraz erken geldim sanırım, sorun olmaz değil mi?" },
+    { "id": "anna_giris", "tr": "Hallo! Anna Weber, iki gece. Deniz manzaralı olsun diye yazmıştım." },
+    { "id": "tolga_giris", "tr": "İyi günler, Tolga Er. Bir gece kalacağım, telefonla ayırtmıştım." },
+    { "id": "leyla_cikis", "tr": "Çıkışımı yapabilir misiniz? 401'deydim. Çok güzel bir haftaydı." }
   ]
 }

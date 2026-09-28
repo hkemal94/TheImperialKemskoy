@@ -1,10 +1,21 @@
-import { t } from '../i18n';
+import { shortDate, t } from '../i18n';
 import roomsData from '../data/rooms.json';
 import { Shadow } from './art';
 
 // Alt bölge: resepsiyon masası ve üzerindeki dönem araçları.
-// Her araç ayrı bir <g> grubu; ileride tıklanabilir hale getirilecekler.
-export function Desk() {
+// Monitör Sistem'i açar; anahtar panosu ve iade edilen anahtar tıklanabilir.
+export interface DeskProps {
+  date?: string;
+  occupancy?: number;
+  hooks?: Record<string, string | null>;
+  returnedKey?: string | null;
+  holding?: boolean;
+  onMonitor?: () => void;
+  onHook?: (room: string) => void;
+  onReturnedKey?: () => void;
+}
+
+export function Desk(p: DeskProps) {
   return (
     <svg className="zone-svg" viewBox="0 0 1280 274" preserveAspectRatio="xMidYMid slice" role="img" aria-label={t('desk.label')}>
       <title>{t('desk.label')}</title>
@@ -42,11 +53,12 @@ export function Desk() {
 
       <Phone />
       <Ledger />
-      <Monitor />
+      <Monitor date={p.date} occupancy={p.occupancy} onClick={p.onMonitor} />
       <CardMachine />
       <Calculator />
-      <KeyBoard />
+      <KeyBoard hooks={p.hooks} holding={p.holding} onHook={p.onHook} />
       <CashDrawer />
+      {p.returnedKey && <ReturnedKey room={p.returnedKey} onClick={p.onReturnedKey} />}
     </svg>
   );
 }
@@ -109,9 +121,9 @@ export function Ledger() {
 }
 
 // Tüplü monitör: kurgusal otel yönetim sistemi.
-export function Monitor() {
+export function Monitor({ date, occupancy, onClick }: { date?: string; occupancy?: number; onClick?: () => void }) {
   return (
-    <g transform="translate(450 20)">
+    <g transform="translate(450 20)" className={onClick ? 'clickable' : undefined} onClick={onClick}>
       <title>{t('desk.monitor.title')}</title>
       <Shadow cx={190} cy={226} rx={190} ry={10} opacity={0.25} />
       <path d="M60 196 H320 L340 222 H40 Z" fill="var(--beige-dark)" />
@@ -134,10 +146,10 @@ export function Monitor() {
           {t('desk.monitor.title')}
         </text>
         <text x="38" y="66">
-          {t('desk.monitor.date')}: 06.10.2008
+          {t('desk.monitor.date')}: {date ? shortDate(date) : '06.10.2008'}
         </text>
         <text x="38" y="86">
-          {t('desk.monitor.occupancy')}: 0/{roomsData.rooms.length}
+          {t('desk.monitor.occupancy')}: {occupancy ?? 0}/{roomsData.rooms.length}
         </text>
         <text x="38" y="164">{t('desk.monitor.status')}_</text>
       </g>
@@ -185,8 +197,9 @@ export function Calculator() {
   );
 }
 
-// Anahtar panosu: her sütun bir kat, bakımdaki odaların anahtarlığı terakota.
-export function KeyBoard() {
+// Anahtar panosu: her sütun bir kat. Bakımdaki odaların anahtarlığı terakota.
+// Anahtarı alınmış kanca boş görünür; elde anahtar varken boş kancalar parlar.
+export function KeyBoard({ hooks, holding, onHook }: { hooks?: Record<string, string | null>; holding?: boolean; onHook?: (room: string) => void }) {
   const floors = Array.from(new Set(roomsData.rooms.map((r) => r.floor)));
   return (
     <g transform="translate(1078 22)">
@@ -201,20 +214,53 @@ export function KeyBoard() {
           .map((room, row) => {
             const x = 32 + col * 43;
             const y = 22 + row * 42;
+            const key = hooks ? hooks[room.number] : room.number;
             const tag = room.status === 'bakim' ? 'var(--terracotta)' : 'url(#dk-brass)';
+            const active = onHook && (holding ? !key : !!key);
             return (
-              <g key={room.number} transform={`translate(${x} ${y})`}>
+              <g
+                key={room.number}
+                transform={`translate(${x} ${y})`}
+                className={active ? 'clickable' : undefined}
+                onClick={active ? () => onHook!(room.number) : undefined}
+              >
+                <rect x="-18" y="-6" width="36" height="44" fill="transparent" />
+                {holding && !key && <rect x="-14" y="-5" width="28" height="42" rx="6" fill="var(--sun)" opacity="0.25" />}
                 <circle r="3" fill="var(--brass-light)" />
-                <path d="M0 3 Q-5 8 0 12 Q5 8 0 3" stroke="var(--brass)" strokeWidth="1.2" fill="none" />
-                <rect x="-11" y="12" width="22" height="24" rx="6" fill={tag} />
-                <circle cx="0" cy="16" r="1.6" fill="var(--wood-dark)" />
-                <text x="0" y="29" textAnchor="middle" className="key-text">
-                  {room.number}
-                </text>
+                {!key && (
+                  <text x="0" y="29" textAnchor="middle" className="hook-text">
+                    {room.number}
+                  </text>
+                )}
+                {key && (
+                  <g>
+                    <path d="M0 3 Q-5 8 0 12 Q5 8 0 3" stroke="var(--brass)" strokeWidth="1.2" fill="none" />
+                    <rect x="-11" y="12" width="22" height="24" rx="6" fill={key === room.number ? tag : 'var(--rose)'} />
+                    <circle cx="0" cy="16" r="1.6" fill="var(--wood-dark)" />
+                    <text x="0" y="29" textAnchor="middle" className="key-text">
+                      {key}
+                    </text>
+                  </g>
+                )}
               </g>
             );
           }),
       )}
+    </g>
+  );
+}
+
+// Çıkış yapan misafirin masaya bıraktığı anahtar.
+function ReturnedKey({ room, onClick }: { room: string; onClick?: () => void }) {
+  return (
+    <g transform="translate(1020 72) rotate(-14)" className="clickable returned-key" onClick={onClick}>
+      <title>{t('desk.returnedKey')}</title>
+      <Shadow cx={0} cy={16} rx={20} ry={4} opacity={0.3} />
+      <circle cx="-18" cy="0" r="6" fill="none" stroke="var(--brass-light)" strokeWidth="2" />
+      <rect x="-12" y="-12" width="30" height="24" rx="7" fill="url(#dk-brass)" />
+      <text x="3" y="4" textAnchor="middle" className="key-text">
+        {room}
+      </text>
     </g>
   );
 }

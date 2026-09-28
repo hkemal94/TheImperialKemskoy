@@ -3,7 +3,28 @@
     {
       "id": "gun_01",
       "date": "2008-10-06",
-      "guests": ["ornek_misafir"]
+      "managerNote": "mudur_gun_01",
+      "actions": ["checkin", "checkout", "rezervasyon"],
+      "reservations": [
+        { "id": "r_selin", "guest": "selin", "arrival": "2008-10-06", "nights": 3, "roomType": "standart", "room": "102" },
+        { "id": "r_selin_aydemir", "guest": "selin_aydemir", "arrival": "2008-10-08", "nights": 2, "roomType": "standart", "room": "202" },
+        { "id": "r_anna", "guest": "anna", "arrival": "2008-10-06", "nights": 2, "roomType": "deluxe", "room": "305" },
+        { "id": "r_kerem", "guest": "kerem", "arrival": "2008-10-07", "nights": 4, "roomType": "suite", "room": "303" },
+        { "id": "r_deniz", "guest": "deniz", "arrival": "2008-10-06", "nights": 1, "roomType": "standart", "room": "201" }
+      ],
+      "inHouse": [
+        { "guest": "mark", "room": "204", "departure": "2008-10-06" },
+        { "guest": "leyla", "room": "401", "departure": "2008-10-06" },
+        { "guest": "hans", "room": "104", "departure": "2008-10-09" }
+      ],
+      "visits": [
+        { "guest": "selin", "purpose": "checkin", "line": "selin_giris" },
+        { "guest": "mark", "purpose": "checkout", "line": "mark_cikis" },
+        { "guest": "kerem", "purpose": "checkin", "line": "kerem_giris" },
+        { "guest": "anna", "purpose": "checkin", "line": "anna_giris" },
+        { "guest": "tolga", "purpose": "checkin", "line": "tolga_giris" },
+        { "guest": "leyla", "purpose": "checkout", "line": "leyla_cikis" }
+      ]
     }
   ]
 }

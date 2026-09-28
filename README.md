@@ -12,8 +12,21 @@ araçlarıyla uğraşıyorsunuz.
   çalışması atmosfer referansıdır, doğrudan oyuna alınmaz.
 - **Kontrol:** Yalnızca fare.
 
-> Şu anki durum: sadece iskelet var. Tek bir ekran çiziliyor, hiçbir şey
-> henüz çalışmıyor (misafir, check-in, puan vb. sonraki adımlarda gelecek).
+> Şu anki durum: **1. gün oynanabilir.** Check-in, check-out ve rezervasyonu
+> Sistem'den kontrol etme var. Hatalar misafir ve personel memnuniyetini düşürür;
+> her misafirden sonra bir tutanak, gün sonunda bir özet ekranı çıkar.
+
+## Nasıl oynanır
+
+1. Gün başında müdürün notunu oku, **Güne başla**'ya bas.
+2. Misafir ne istediğini söyler. **Monitöre** tıkla, Sistem açılır.
+   - *Gelişler*: bugün ve ileriki günler için rezervasyonlar. Tarihi bugün olana giriş yapılır.
+   - *Konaklayanlar*: oteldeki misafirler. Çıkış buradan yapılır.
+   - *Odalar*: odaların durumu (temiz, dolu, kirli, bakımda).
+3. Check-in: rezervasyonu seç → **Check-in yap** → panodan o odanın anahtarına tıkla.
+4. Check-out: misafiri seç → **Check-out yap** → masadaki iade anahtarına, sonra kendi boş kancasına tıkla.
+5. Rezervasyonu olmayan ya da tarihi tutmayan misafire **Üzgünüm…** cevabını ver.
+6. İşin bitince misafiri uğurla. Tutanakta ne doğru, ne yanlış yazar.
 
 ## Ekran düzeni
 
@@ -36,27 +49,35 @@ Ekran üç yatay bölgeden oluşur:
 ├── tsconfig*.json          TypeScript (kod dili) ayarları
 └── src/                    Oyunun kaynak kodu
     ├── main.tsx            Başlangıç noktası; oyunu sayfaya yerleştirir
-    ├── App.tsx             Ana ekran; üç bölgeyi alt alta dizer
+    ├── App.tsx             Ana ekran; üç bölgeyi ve açılan panelleri dizer
+    ├── game/               Oyunun beyni (görüntüden bağımsız)
+    │   ├── types.ts        Veri tipleri: misafir, rezervasyon, gün, hata kodları
+    │   ├── data.ts         JSON içerik dosyalarını yükler
+    │   ├── rules.ts        Kurallar: neyin hata olduğu ve kaç puan düşürdüğü
+    │   └── state.ts        Oyunun anlık durumu; her tıklamanın ne değiştirdiği
     ├── styles.css          Renk paleti ve genel görünüm
     ├── components/         Ekran parçaları
     │   ├── art.tsx         Ortak çizimler: yaprak, sarmaşık, saksı, gölge
     │   ├── Lobby.tsx       Üst bölge: lobi çizimi
     │   ├── GuestArea.tsx   Orta bölge: misafir alanı
-    │   └── Desk.tsx        Alt bölge: masa ve üzerindeki araçlar
+    │   ├── Desk.tsx        Alt bölge: masa ve üzerindeki araçlar
+    │   ├── Sistem.tsx      Monitörde açılan kurgusal otel yönetim sistemi
+    │   └── Panels.tsx      Gün başı, konuşma balonu, tutanak, gün sonu
     ├── i18n/               Çeviriler (oyunda görünen bütün yazılar)
     │   ├── index.ts        Yazıları dosyadan okuyan küçük yardımcı
     │   └── tr.json         Türkçe yazılar
     └── data/               Oyun içeriği (buraya siz yazacaksınız)
         ├── rooms.json      Odalar: 4 kat × 5 oda (x01–x05), wikiyle aynı düzen
-        ├── guests.json     Misafirler
-        ├── days.json       Günler ve o gün gelecek misafirler
-        └── dialogues.json  Diyaloglar
+        ├── guests.json     Misafirler (ad, uyruk, siluet rengi)
+        ├── days.json       Günler: tarih, açık işlemler, rezervasyonlar,
+        │                   oteldekiler ve masaya gelen misafirlerin sırası
+        └── dialogues.json  Diyaloglar ("tr" alanı; İngilizce için "en" eklenecek)
 ```
 
 ### İçerik (`src/data`)
 
 Oyunun hikâyesi ve içeriği kodun içine yazılmaz; bu klasördeki JSON
-dosyalarına yazılır. Şu an içlerinde yalnızca örnek birer kayıt var. İçeriği
+dosyalarına yazılır. Şu an 1. gün için örnek misafirler ve rezervasyonlar var. İçeriği
 doldurmak için kod bilmeniz gerekmez; dosyadaki kalıbı kopyalayıp
 çoğaltmanız yeterli.
 
