@@ -63,6 +63,16 @@ Ekranda görünen her yazı `tr.json` dosyasından gelir. Dosyada her satır
 anahtara dokunmayın. İngilizce eklenirken aynı anahtarlarla bir `en.json`
 dosyası oluşturulacak. Görsellerin içine yazı gömülmez.
 
+## Tasarım (Figma)
+
+Görsel tasarımlar Figma'da tutulur:
+[Kemsköy Tasarım](https://www.figma.com/design/A8sB4u37VEpVI4GG4VHs2p)
+
+Dosyada renk paleti, 1280×720 oyun ekranı ve her masa aracı ayrı çerçeve
+olarak durur. Çerçevenin adı, oyuna konacak SVG dosyasının adıdır
+(örn. `telefon`). Yeniden çizilen bir araç Figma'dan SVG olarak dışa
+aktarılıp oyuna eklenir.
+
 ## Çalıştırmak için
 
 Bilgisayarda [Node.js](https://nodejs.org) kurulu olmalı. Sonra proje

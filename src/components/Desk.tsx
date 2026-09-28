@@ -26,7 +26,7 @@ export function Desk() {
   );
 }
 
-function Phone() {
+export function Phone() {
   return (
     <g transform="translate(40 60)">
       <title>{t('desk.phone')}</title>
@@ -43,7 +43,7 @@ function Phone() {
   );
 }
 
-function Ledger() {
+export function Ledger() {
   return (
     <g transform="translate(230 70) rotate(-4)">
       <title>{t('desk.ledger')}</title>
@@ -59,7 +59,7 @@ function Ledger() {
   );
 }
 
-function Monitor() {
+export function Monitor() {
   return (
     <g transform="translate(450 16)">
       <title>{t('desk.monitor.title')}</title>
@@ -83,7 +83,7 @@ function Monitor() {
   );
 }
 
-function CardMachine() {
+export function CardMachine() {
   return (
     <g transform="translate(870 110)">
       <title>{t('desk.cardMachine')}</title>
@@ -97,7 +97,7 @@ function CardMachine() {
   );
 }
 
-function Calculator() {
+export function Calculator() {
   return (
     <g transform="translate(980 124) rotate(6)">
       <title>{t('desk.calculator')}</title>
@@ -110,7 +110,7 @@ function Calculator() {
   );
 }
 
-function KeyBoard() {
+export function KeyBoard() {
   const rooms = roomsData.rooms;
   const perRow = 10;
   return (
@@ -138,7 +138,7 @@ function KeyBoard() {
   );
 }
 
-function CashDrawer() {
+export function CashDrawer() {
   return (
     <g transform="translate(470 246)">
       <title>{t('desk.cashDrawer')}</title>
