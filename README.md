@@ -6,7 +6,9 @@ araçlarıyla uğraşıyorsunuz.
 
 - **Mekân:** 1954 yapımı, 20 odalı, eski ve lüks bir Ege oteli.
 - **Dönem:** 2007 sonu – 2008.
-- **Görsel stil:** 2D, vektörel, minimalist. Sakin Ege renkleri, dönem evrakı.
+- **Görsel stil:** 2D, vektörel; aydınlık ve bitkisel bir Ege havası (adaçayı
+  yeşili, terakota, parşömen, pirinç). Figma'daki "bright-botanical-blueprint"
+  çalışması atmosfer referansıdır, doğrudan oyuna alınmaz.
 - **Kontrol:** Yalnızca fare.
 
 > Şu anki durum: sadece iskelet var. Tek bir ekran çiziliyor, hiçbir şey
@@ -36,6 +38,7 @@ Ekran üç yatay bölgeden oluşur:
     ├── App.tsx             Ana ekran; üç bölgeyi alt alta dizer
     ├── styles.css          Renk paleti ve genel görünüm
     ├── components/         Ekran parçaları
+    │   ├── art.tsx         Ortak çizimler: yaprak, sarmaşık, saksı, gölge
     │   ├── Lobby.tsx       Üst bölge: lobi çizimi
     │   ├── GuestArea.tsx   Orta bölge: misafir alanı
     │   └── Desk.tsx        Alt bölge: masa ve üzerindeki araçlar
@@ -43,7 +46,7 @@ Ekran üç yatay bölgeden oluşur:
     │   ├── index.ts        Yazıları dosyadan okuyan küçük yardımcı
     │   └── tr.json         Türkçe yazılar
     └── data/               Oyun içeriği (buraya siz yazacaksınız)
-        ├── rooms.json      Odalar (20 oda)
+        ├── rooms.json      Odalar: 4 kat × 5 oda (x01–x05), wikiyle aynı düzen
         ├── guests.json     Misafirler
         ├── days.json       Günler ve o gün gelecek misafirler
         └── dialogues.json  Diyaloglar
