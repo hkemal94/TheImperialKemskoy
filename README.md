@@ -29,6 +29,7 @@ Ekran üç yatay bölgeden oluşur:
 ├── index.html              Tarayıcının açtığı ana sayfa (oyunu içine yükler)
 ├── package.json            Projenin kullandığı paketlerin listesi ve komutlar
 ├── vite.config.ts          Vite (geliştirme/derleme aracı) ayarları
+├── vercel.json             Vercel'in oyunu nasıl derleyip yayınlayacağı
 ├── tsconfig*.json          TypeScript (kod dili) ayarları
 └── src/                    Oyunun kaynak kodu
     ├── main.tsx            Başlangıç noktası; oyunu sayfaya yerleştirir
