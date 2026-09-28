@@ -5,7 +5,8 @@ tarzında: masada oturuyorsunuz, misafirler geliyor, evrakla ve dönemin
 araçlarıyla uğraşıyorsunuz.
 
 - **Mekân:** 1954 yapımı, 20 odalı, eski ve lüks bir Ege oteli.
-- **Dönem:** 2007 sonu – 2008.
+- **Dönem:** Ekim 2008, "Sezon Sonu" (6–19 Ekim 2008, 14 gün). Düzada evreninin
+  aktif dönemiyle aynı; ayrıntılar Kems Komuta Merkezi wikisinde, otel maddesinde.
 - **Görsel stil:** 2D, vektörel; aydınlık ve bitkisel bir Ege havası (adaçayı
   yeşili, terakota, parşömen, pirinç). Figma'daki "bright-botanical-blueprint"
   çalışması atmosfer referansıdır, doğrudan oyuna alınmaz.

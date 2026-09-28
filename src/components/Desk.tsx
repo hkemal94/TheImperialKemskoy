@@ -134,7 +134,7 @@ export function Monitor() {
           {t('desk.monitor.title')}
         </text>
         <text x="38" y="66">
-          {t('desk.monitor.date')}: 01.11.2007
+          {t('desk.monitor.date')}: 06.10.2008
         </text>
         <text x="38" y="86">
           {t('desk.monitor.occupancy')}: 0/{roomsData.rooms.length}
