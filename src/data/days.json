@@ -1,0 +1,9 @@
+{
+  "days": [
+    {
+      "id": "gun_01",
+      "date": "2007-11-01",
+      "guests": ["ornek_misafir"]
+    }
+  ]
+}

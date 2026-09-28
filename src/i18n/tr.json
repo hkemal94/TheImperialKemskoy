@@ -1,0 +1,20 @@
+{
+  "game.title": "The Imperial Kemsköy",
+  "game.founded": "1954'ten beri",
+
+  "lobby.label": "Lobi",
+  "guest.label": "Misafir",
+  "guest.empty": "Desk boş. Bir sonraki misafir bekleniyor.",
+  "desk.label": "Masa",
+
+  "desk.monitor.title": "Otel Yönetim Sistemi",
+  "desk.monitor.date": "Tarih",
+  "desk.monitor.occupancy": "Doluluk",
+  "desk.monitor.status": "Sistem hazır.",
+  "desk.phone": "Telefon",
+  "desk.keys": "Anahtarlar",
+  "desk.ledger": "Kayıt Defteri",
+  "desk.cardMachine": "Kart Makinesi",
+  "desk.calculator": "Hesap Makinesi",
+  "desk.cashDrawer": "Kasa"
+}

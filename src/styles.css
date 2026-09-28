@@ -1,0 +1,120 @@
+/* Renk paleti: sakin Ege, badana duvar, eski ahşap, pirinç, sararmış kâğıt. */
+:root {
+  --bg: #1b2a33;
+
+  --wall: #efe7d4;
+  --wall-shade: #d9ceb4;
+  --marble: #e4ddcc;
+  --frame: #f7f2e6;
+  --sky: #cfe0e3;
+  --sea: #3f7f98;
+  --sea-light: #8fbccb;
+  --sea-deep: #24506a;
+  --olive: #6f7a4a;
+  --terracotta: #b5653f;
+  --brass: #b99a58;
+
+  --panel: #6e4a33;
+  --panel-line: #7d5840;
+
+  --wood: #8a5d3e;
+  --wood-edge: #6b452d;
+  --wood-grain: #7f5536;
+  --wood-dark: #4f3322;
+  --leather: #5c2f25;
+  --felt: #2f4a3c;
+
+  --paper: #f1e8cf;
+  --paper-shade: #d8ccad;
+  --paper-rule: #b9c6cc;
+  --paper-ink-soft: #cdb89b;
+
+  --bakelite: #262220;
+  --bakelite-hi: #3a3430;
+  --beige: #d9d1bb;
+  --beige-dark: #bdb49c;
+  --grey-dark: #3b3f42;
+  --grey-mid: #6b7074;
+  --lcd: #a9b58c;
+  --led: #7fbf6a;
+
+  --screen: #1d3f6e;
+  --screen-bar: #d9d1bb;
+  --screen-text: #e8eef4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  font-family: Georgia, 'Times New Roman', serif;
+  user-select: none;
+}
+
+/* Oyun ekranı her zaman 16:9 oranında, pencereye sığacak şekilde ortalanır. */
+.stage {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  width: min(100vw, calc(100vh * 16 / 9));
+  aspect-ratio: 16 / 9;
+  display: grid;
+  grid-template-rows: 30fr 32fr 38fr;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.zone {
+  position: relative;
+  overflow: hidden;
+}
+
+.zone-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* SVG içindeki yazılar */
+.sign-text {
+  fill: var(--brass);
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.hint-text {
+  fill: var(--paper-ink-soft);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.screen-text text {
+  fill: var(--screen-text);
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+}
+
+.screen-text text:first-of-type {
+  fill: var(--screen);
+  font-weight: bold;
+}
+
+.key-text {
+  fill: var(--wood-dark);
+  font-family: 'Courier New', monospace;
+  font-size: 9px;
+  font-weight: bold;
+}
