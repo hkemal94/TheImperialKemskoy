@@ -1,0 +1,19 @@
+{
+  "oyun": "The Imperial Kemskoy",
+  "kaynak": "https://the-imperial-kemskoy.vercel.app/",
+  "not": "Yayındaki oyundan alındı; ekran ölçüsünün 2 katı çözünürlük. Oyunda şimdilik tek ekran var, dokunulunca bir şey olmuyor.",
+  "goruntuler": [
+    {
+      "dosya": "telefon-01-resepsiyon.png",
+      "baslik": "Resepsiyon masası (tek ekran, iskelet)",
+      "tarih": "2026-11-03",
+      "cihaz": "telefon (yatay, 844x390)"
+    },
+    {
+      "dosya": "masaustu-01-resepsiyon.png",
+      "baslik": "Resepsiyon masası (tek ekran, iskelet)",
+      "tarih": "2026-11-03",
+      "cihaz": "masaüstü (1440x900)"
+    }
+  ]
+}
