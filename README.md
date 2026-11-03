@@ -1,4 +1,4 @@
-# The Imperial Kemsköy
+# The Imperial Kemskoy
 
 Birinci şahıs bir otel resepsiyonu simülasyonu. Yapı olarak *Papers, Please*
 tarzında: masada oturuyorsunuz, misafirler geliyor, evrakla ve dönemin
@@ -31,6 +31,8 @@ Ekran üç yatay bölgeden oluşur:
 ├── vite.config.ts          Vite (geliştirme/derleme aracı) ayarları
 ├── vercel.json             Vercel'in oyunu nasıl derleyip yayınlayacağı
 ├── tsconfig*.json          TypeScript (kod dili) ayarları
+├── docs/
+│   └── ekran-goruntuleri/  Yayındaki oyundan ekran görüntüleri ve listesi (liste.json)
 └── src/                    Oyunun kaynak kodu
     ├── main.tsx            Başlangıç noktası; oyunu sayfaya yerleştirir
     ├── App.tsx             Ana ekran; üç bölgeyi alt alta dizer
