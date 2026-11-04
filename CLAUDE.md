@@ -2,7 +2,7 @@
 
 Bu depoda çalışan her oturum önce bu dosyayı, sonra `README.md`'yi okur.
 Oyunun ne olduğu, teknolojisi ve klasörleri README'de; burada tekrar edilmez.
-Tasarım belgesi henüz yok; açılınca oyunun tek kaynağı o olur.
+Oyunun tek kaynağı `docs/tasarim-belgesi.md`; sıra ve açık işler `docs/yol-haritasi.md`'de (4 Kasım 2026).
 
 ## Kim için
 

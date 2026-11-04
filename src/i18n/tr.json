@@ -1,8 +1,8 @@
 {
   "game.title": "The Imperial Kemskoy",
-  "game.founded": "1954'ten beri",
 
   "lobby.label": "Lobi",
+  "lobby.sign": "The Imperial Kemsköy",
   "guest.label": "Misafir",
   "guest.empty": "Desk boş. Bir sonraki misafir bekleniyor.",
   "desk.label": "Masa",

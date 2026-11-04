@@ -27,7 +27,7 @@ export function Lobby() {
       <g transform="translate(560 40)">
         <rect x="-30" y="-8" width="220" height="26" rx="2" fill="var(--wood-dark)" />
         <text x="80" y="10" textAnchor="middle" className="sign-text">
-          {t('game.title')}
+          {t('lobby.sign')}
         </text>
         <path d="M10 176 V70 A70 50 0 0 1 150 70 V176 Z" fill="var(--wall-shade)" />
         <path d="M22 176 V74 A58 42 0 0 1 138 74 V176 Z" fill="var(--sea-deep)" opacity="0.85" />
