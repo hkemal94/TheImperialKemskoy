@@ -15,7 +15,7 @@ karakter ve misafir adları burada yazılmaz (Kemal'in). Bir karar değişirse
 | Oyunun adı | The Imperial Kemskoy (sekme başlığı ve README böyle) |
 | Oyun içi otel tabelası | The Imperial Kemsköy (ö ile, kanondaki gibi) |
 | Otel | 1954 yapımı |
-| Oda | 20 oda = 4 kat × 5 oda. Oyundaki anahtar panosu şimdilik 2 kat × 10 (101–110, 201–210); 4 × 5'e göre düzeltilmesi yol haritasında sıradaki iş |
+| Oda | 20 oda = 4 kat × 5 oda (101–105, 201–205, 301–305, 401–405); anahtar panosu bu düzende |
 | Dönem | 2007 sonu – 2008 |
 | Masadaki tarih | Sabit; şimdilik koda gömülü (01.11.2007). Şimdilik dokunulmayacak |
 
