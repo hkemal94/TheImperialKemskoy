@@ -110,30 +110,36 @@ export function Calculator() {
   );
 }
 
+// Anahtar panosu: her kat bir sıra (üstte 1. kat), her sırada o katın odaları.
+// Anahtarlar çiviye asılı durur; sıra ve sütun sayısı oda verisinden gelir.
 export function KeyBoard() {
   const rooms = roomsData.rooms;
-  const perRow = 10;
+  const floors = [...new Set(rooms.map((room) => room.floor))].sort((a, b) => a - b);
+  const colPitch = 33;
+  const rowPitch = 52;
   return (
     <g transform="translate(1080 20)">
       <title>{t('desk.keys')}</title>
       <rect x="0" y="0" width="186" height="236" rx="4" fill="var(--wood-dark)" />
       <rect x="8" y="8" width="170" height="220" fill="var(--felt)" />
-      {rooms.map((room, i) => {
-        const col = Math.floor(i / perRow);
-        const row = i % perRow;
-        const x = 30 + col * 84;
-        const y = 22 + row * 20;
-        return (
-          <g key={room.number} transform={`translate(${x} ${y})`}>
-            <circle cx="0" cy="0" r="2.5" fill="var(--brass)" />
-            <path d="M0 2 V7" stroke="var(--brass)" strokeWidth="1.5" />
-            <rect x="4" y="-6" width="34" height="12" rx="6" fill="var(--brass)" />
-            <text x="21" y="3.5" textAnchor="middle" className="key-text">
-              {room.number}
-            </text>
-          </g>
-        );
-      })}
+      {floors.map((floor, row) =>
+        rooms
+          .filter((room) => room.floor === floor)
+          .map((room, col) => {
+            const x = 27 + col * colPitch;
+            const y = 32 + row * rowPitch;
+            return (
+              <g key={room.number} transform={`translate(${x} ${y})`}>
+                <circle cx="0" cy="0" r="2.5" fill="var(--brass)" />
+                <path d="M0 2 V8" stroke="var(--brass)" strokeWidth="1.5" />
+                <rect x="-14" y="8" width="28" height="14" rx="7" fill="var(--brass)" />
+                <text x="0" y="18.5" textAnchor="middle" className="key-text">
+                  {room.number}
+                </text>
+              </g>
+            );
+          }),
+      )}
     </g>
   );
 }
