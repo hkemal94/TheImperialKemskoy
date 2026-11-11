@@ -1,6 +1,6 @@
 # The Imperial Kemskoy · Yol haritası
 
-Son güncelleme: **4 Kasım 2026**. Bu dosya her PR'da güncellenir. KKM'nin
+Son güncelleme: **11 Kasım 2026**. Bu dosya her PR'da güncellenir. KKM'nin
 oyun sayfası onu buradan okur. Kararların ayrıntısı `docs/tasarim-belgesi.md`'de;
 bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazılmaz.
 
@@ -12,6 +12,7 @@ bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazıl
 | Son biten | Anahtar panosu ve oda listesi 4 kat × 5 oda oldu: her kat bir sıra (101–105, 201–205, 301–305, 401–405) (bu PR) |
 | Öncelik | Bekleyebilir; şimdilik belgeler. Ajansta öncelik DK Lite (Kemal, 4 Kasım) |
 | Yayın | Deneme sürümü webde; tarih yok |
+| KKM | 11 Kasım: resepsiyon ekranı KKM'de kapak, otelin logosu künyede (`docs/logo.webp`) |
 
 ## Sıradaki
 

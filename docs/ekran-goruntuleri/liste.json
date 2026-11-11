@@ -7,7 +7,8 @@
       "dosya": "telefon-01-resepsiyon.png",
       "baslik": "Resepsiyon masası (tek ekran, iskelet)",
       "tarih": "2026-11-03",
-      "cihaz": "telefon (yatay, 844x390)"
+      "cihaz": "telefon (yatay, 844x390)",
+      "kapak": true
     },
     {
       "dosya": "masaustu-01-resepsiyon.png",
@@ -15,5 +16,6 @@
       "tarih": "2026-11-03",
       "cihaz": "masaüstü (1440x900)"
     }
-  ]
+  ],
+  "logo": "docs/logo.webp"
 }
