@@ -29,7 +29,8 @@ Ekran üç yatay bölgeden oluşur:
 ├── index.html              Tarayıcının açtığı ana sayfa (oyunu içine yükler)
 ├── package.json            Projenin kullandığı paketlerin listesi ve komutlar
 ├── vite.config.ts          Vite (geliştirme/derleme aracı) ayarları
-├── vercel.json             Vercel'in oyunu nasıl derleyip yayınlayacağı
+├── .github/workflows/
+│   └── yayinla.yml         Oyunu derleyip GitHub Pages'te yayınlar
 ├── tsconfig*.json          TypeScript (kod dili) ayarları
 ├── docs/
 │   └── ekran-goruntuleri/  Yayındaki oyundan ekran görüntüleri ve listesi (liste.json)
@@ -85,6 +86,14 @@ npm install      # ilk seferde bir kez: gerekli paketleri indirir
 npm run dev      # oyunu tarayıcıda açılacak şekilde başlatır
 npm run build    # hatasız derlendiğini kontrol eder, dist/ klasörüne paketler
 ```
+
+## Yayın
+
+Oyun GitHub Pages'te yayında:
+<https://hkemal94.github.io/TheImperialKemskoy/>
+
+Ana dala her birleştirmede kendiliğinden derlenip yeniden yayınlanır
+(`.github/workflows/yayinla.yml`). Önceden Vercel'deydi; artık değil.
 
 ## Kurallar
 
