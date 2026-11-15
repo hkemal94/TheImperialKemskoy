@@ -1,20 +1,26 @@
 {
   "oyun": "The Imperial Kemskoy",
   "kaynak": "https://hkemal94.github.io/TheImperialKemskoy/",
-  "not": "Yayındaki oyundan alındı; ekran ölçüsünün 2 katı çözünürlük. Oyunda şimdilik tek ekran var, dokunulunca bir şey olmuyor.",
+  "not": "Görsel yenileme dalından (ajans/gorsel-yenileme) yerelde alındı; ana dala birleşince yayındaki oyun da böyle görünür. Oyunda şimdilik tek ekran var, dokunulunca bir şey olmuyor.",
   "goruntuler": [
     {
       "dosya": "telefon-01-resepsiyon.png",
-      "baslik": "Resepsiyon masası (tek ekran, iskelet)",
-      "tarih": "2026-11-03",
+      "baslik": "Resepsiyon (görsel yenileme)",
+      "tarih": "2026-11-15",
       "cihaz": "telefon (yatay, 844x390)",
       "kapak": true
     },
     {
       "dosya": "masaustu-01-resepsiyon.png",
-      "baslik": "Resepsiyon masası (tek ekran, iskelet)",
-      "tarih": "2026-11-03",
-      "cihaz": "masaüstü (1440x900)"
+      "baslik": "Resepsiyon (görsel yenileme)",
+      "tarih": "2026-11-15",
+      "cihaz": "masaüstü (1280x720)"
+    },
+    {
+      "dosya": "masaustu-02-masa-yakin.png",
+      "baslik": "Masa yakından: telefon, defter, monitör, kart makinesi, anahtar panosu",
+      "tarih": "2026-11-15",
+      "cihaz": "masaüstü (1280x720, masa bölgesi, 2 kat çözünürlük)"
     }
   ],
   "logo": "docs/logo.webp"

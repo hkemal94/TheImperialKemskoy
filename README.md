@@ -33,6 +33,7 @@ Ekran üç yatay bölgeden oluşur:
 │   └── yayinla.yml         Oyunu derleyip GitHub Pages'te yayınlar
 ├── tsconfig*.json          TypeScript (kod dili) ayarları
 ├── docs/
+│   ├── lisanslar.md        Dışarıdan gelen yazı tipleri ve lisansları
 │   └── ekran-goruntuleri/  Yayındaki oyundan ekran görüntüleri ve listesi (liste.json)
 └── src/                    Oyunun kaynak kodu
     ├── main.tsx            Başlangıç noktası; oyunu sayfaya yerleştirir
@@ -41,7 +42,8 @@ Ekran üç yatay bölgeden oluşur:
     ├── components/         Ekran parçaları
     │   ├── Lobby.tsx       Üst bölge: lobi çizimi
     │   ├── GuestArea.tsx   Orta bölge: misafir alanı
-    │   └── Desk.tsx        Alt bölge: masa ve üzerindeki araçlar
+    │   ├── Desk.tsx        Alt bölge: masa ve üzerindeki araçlar
+    │   └── art.tsx         Ortak çizim parçaları: yaprak, sarmaşık, saksı, gölge
     ├── i18n/               Çeviriler (oyunda görünen bütün yazılar)
     │   ├── index.ts        Yazıları dosyadan okuyan küçük yardımcı
     │   └── tr.json         Türkçe yazılar
