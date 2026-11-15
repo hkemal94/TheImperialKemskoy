@@ -1,6 +1,6 @@
 # The Imperial Kemskoy · Tasarım belgesi
 
-Son güncelleme: **4 Kasım 2026**. Bu belge oyunun tek kaynağıdır; kısa
+Son güncelleme: **15 Kasım 2026**. Bu belge oyunun tek kaynağıdır; kısa
 tutulur: yalnız Kemal'in verdiği kararlar ve açık sorular. Kurgu metni,
 karakter ve misafir adları burada yazılmaz (Kemal'in). Bir karar değişirse
 önce bu belge, sonra kod güncellenir. Düzada bilgisi yalnız KKM'deki
@@ -22,9 +22,19 @@ karakter ve misafir adları burada yazılmaz (Kemal'in). Bir karar değişirse
 README'deki öbür bilgiler (2D vektörel minimalist stil, yalnız fare,
 üç bölgeli ekran) değişmedi; ayrıntı orada.
 
+## 1.1 Ödül: pul koleksiyonu (Kemal, 15 Kasım 2026)
+
+Posta pulları bütün oyunlarımızın **ortak ödül sistemi**; oyun beklediği için yalnız karar kaydı, kod yok.
+Her ay bir pul; bir çeyreğin üç pulu toplanınca daha büyük **4. pul** ("3+1" seri). Gerçek posta pulu
+gibi, her pul ayrı tasarım, pulun üstünde yazı yok (çeyrek ve yıl altında). Oyunlar arasında ortak
+koleksiyon sayfası. Ayrıntı: Kems-Ajans deposunda `docs/pul-koleksiyonu.md`. Kod yapısı kart oyunundaki
+`src/pul/` klasörü örnek alınarak kurulacak.
+**Ayın pulu, o ayın görevi bitince gelir** (Kemal, 15 Kasım 2026). Her ay oyunda tek bir büyük görev olur; görevlerin içerikleri ileride Kemal'e sorulacak ([Kemal]).
+
 ## 2. Açık sorular (Kemal'in kararını bekliyor)
 
 - Oynanış döngüsünün ayrıntısı: bir misafirle ne adımlar yapılır.
 - Kazanma ve kaybetme: var mı, nasıl.
 - Gün yapısı: gün nasıl başlar ve biter, bir günde ne olur.
 - Ses: müzik ve efektler olacak mı, nasıl.
+- ~~Pul koleksiyonu (1.1): bu oyunda bir ayın pulu nasıl kazanılır?~~ Cevaplandı (Kemal, 15 Kasım): o ayın görevi bitince; her ay tek büyük görev. Görevlerin içerikleri [Kemal], ileride sorulacak.
