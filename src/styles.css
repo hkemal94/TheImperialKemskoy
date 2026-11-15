@@ -1,45 +1,62 @@
-/* Renk paleti: sakin Ege, badana duvar, eski ahşap, pirinç, sararmış kâğıt. */
+/* Renk paleti: aydınlık, bitkisel bir Ege oteli.
+   Adaçayı yeşili, terakota, eski parşömen, pudra gül, zeytin, Ege mavisi, pirinç. */
 :root {
-  --bg: #1b2a33;
+  --bg: #1f2b27;
+  --shadow: #1a120c;
+  --ink: #2f3a33;
+  --ink-blue: #2d4a6b;
 
-  --wall: #efe7d4;
-  --wall-shade: #d9ceb4;
-  --marble: #e4ddcc;
-  --frame: #f7f2e6;
-  --sky: #cfe0e3;
-  --sea: #3f7f98;
-  --sea-light: #8fbccb;
-  --sea-deep: #24506a;
-  --olive: #6f7a4a;
-  --terracotta: #b5653f;
-  --brass: #b99a58;
+  --wall: #efe6d2;
+  --wall-light: #f6f0e1;
+  --wall-shade: #dccfb3;
+  --parchment: #f4efe2;
+  --parchment-shade: #e3d8c0;
+  --marble: #eee8dc;
+  --marble-vein: #d8cdb7;
+  --frame: #faf6ec;
 
-  --panel: #6e4a33;
-  --panel-line: #7d5840;
+  --sky: #e4eef1;
+  --aegean: #a3c3d9;
+  --sea: #4f86a6;
+  --sea-deep: #2e5e7e;
+  --sun: #ffe3a3;
 
-  --wood: #8a5d3e;
-  --wood-edge: #6b452d;
-  --wood-grain: #7f5536;
-  --wood-dark: #4f3322;
+  --sage: #52796f;
+  --sage-light: #84a59d;
+  --sage-dark: #354f52;
+  --leaf: #5f8a5a;
+  --leaf-light: #8fb48a;
+  --leaf-dark: #3f6448;
+  --olive: #6d7f4b;
+  --olive-silver: #a7b394;
+
+  --terracotta: #bc5a45;
+  --terracotta-dark: #8f3f30;
+  --rose: #d4a19b;
+
+  --brass: #c29a4f;
+  --brass-light: #e6c987;
+  --brass-dark: #8a6a2e;
+
+  --wood: #7a4b30;
+  --wood-light: #936043;
+  --wood-dark: #4d2e1d;
+  --wood-grain: #6a3f27;
   --leather: #5c2f25;
-  --felt: #2f4a3c;
+  --felt: #33503f;
 
-  --paper: #f1e8cf;
-  --paper-shade: #d8ccad;
+  --beige: #e8dfca;
+  --beige-dark: #cfc3a6;
+  --beige-deep: #a89c80;
   --paper-rule: #b9c6cc;
-  --paper-ink-soft: #cdb89b;
-
-  --bakelite: #262220;
-  --bakelite-hi: #3a3430;
-  --beige: #d9d1bb;
-  --beige-dark: #bdb49c;
-  --grey-dark: #3b3f42;
-  --grey-mid: #6b7074;
-  --lcd: #a9b58c;
+  --grey-dark: #3c4043;
+  --grey-mid: #6c7276;
+  --lcd: #b6c392;
   --led: #7fbf6a;
 
-  --screen: #1d3f6e;
-  --screen-bar: #d9d1bb;
+  --screen: #163556;
+  --screen-glow: #2b5f8e;
+  --screen-bar: #e8dfca;
   --screen-text: #e8eef4;
 }
 
@@ -56,7 +73,7 @@ body,
 
 body {
   background: var(--bg);
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Nunito', 'Trebuchet MS', sans-serif;
   user-select: none;
 }
 
@@ -90,31 +107,33 @@ body {
 
 /* SVG içindeki yazılar */
 .sign-text {
-  fill: var(--brass);
+  fill: var(--brass-light);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .hint-text {
-  fill: var(--paper-ink-soft);
-  font-size: 14px;
-  font-style: italic;
+  fill: var(--parchment);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 12px;
 }
 
 .screen-text text {
   fill: var(--screen-text);
-  font-family: 'Courier New', monospace;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
   font-size: 13px;
 }
 
-.screen-text text:first-of-type {
+.screen-text .screen-title {
   fill: var(--screen);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .key-text {
   fill: var(--wood-dark);
-  font-family: 'Courier New', monospace;
-  font-size: 9px;
-  font-weight: bold;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 8px;
+  font-weight: 600;
 }
