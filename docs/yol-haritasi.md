@@ -34,4 +34,4 @@ bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazıl
 - Ses
 - Dönem: 2007 sonu – 2008 mi, Ekim 2008 mi (masadaki tarih buna göre değişecek)
 - Karakter, misafir ve mekân adları (Kemal'in)
-- Pul koleksiyonu (15 Kasım 2026, belge 1.1; bütün oyunların ortak ödülü): bu oyunda bir ayın pulu nasıl kazanılır
+- Pul koleksiyonu (15 Kasım 2026, belge 1.1; bütün oyunların ortak ödülü): ayın pulu o ayın görevi bitince gelir (Kemal, 15 Kasım); her ayın görevinin içeriği [Kemal], ileride sorulacak

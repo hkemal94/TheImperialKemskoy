@@ -29,6 +29,7 @@ Her ay bir pul; bir çeyreğin üç pulu toplanınca daha büyük **4. pul** ("3
 gibi, her pul ayrı tasarım, pulun üstünde yazı yok (çeyrek ve yıl altında). Oyunlar arasında ortak
 koleksiyon sayfası. Ayrıntı: Kems-Ajans deposunda `docs/pul-koleksiyonu.md`. Kod yapısı kart oyunundaki
 `src/pul/` klasörü örnek alınarak kurulacak.
+**Ayın pulu, o ayın görevi bitince gelir** (Kemal, 15 Kasım 2026). Her ay oyunda tek bir büyük görev olur; görevlerin içerikleri ileride Kemal'e sorulacak ([Kemal]).
 
 ## 2. Açık sorular (Kemal'in kararını bekliyor)
 
@@ -36,4 +37,4 @@ koleksiyon sayfası. Ayrıntı: Kems-Ajans deposunda `docs/pul-koleksiyonu.md`. 
 - Kazanma ve kaybetme: var mı, nasıl.
 - Gün yapısı: gün nasıl başlar ve biter, bir günde ne olur.
 - Ses: müzik ve efektler olacak mı, nasıl.
-- Pul koleksiyonu (1.1): bu oyunda bir ayın pulu nasıl kazanılır? [Kemal]
+- ~~Pul koleksiyonu (1.1): bu oyunda bir ayın pulu nasıl kazanılır?~~ Cevaplandı (Kemal, 15 Kasım): o ayın görevi bitince; her ay tek büyük görev. Görevlerin içerikleri [Kemal], ileride sorulacak.
