@@ -1,6 +1,6 @@
 # The Imperial Kemskoy · Tasarım belgesi
 
-Son güncelleme: **15 Kasım 2026**. Bu belge oyunun tek kaynağıdır; kısa
+Son güncelleme: **16 Kasım 2026**. Bu belge oyunun tek kaynağıdır; kısa
 tutulur: yalnız Kemal'in verdiği kararlar ve açık sorular. Kurgu metni,
 karakter ve misafir adları burada yazılmaz (Kemal'in). Bir karar değişirse
 önce bu belge, sonra kod güncellenir. Düzada bilgisi yalnız KKM'deki
@@ -16,8 +16,8 @@ karakter ve misafir adları burada yazılmaz (Kemal'in). Bir karar değişirse
 | Oyun içi otel tabelası | The Imperial Kemsköy (ö ile, kanondaki gibi) |
 | Otel | 1954 yapımı |
 | Oda | 20 oda = 4 oda katı × 5 oda (giriş katı ayrı) (101–105, 201–205, 301–305, 401–405); anahtar panosu bu düzende |
-| Dönem | 2007 sonu – 2008 |
-| Masadaki tarih | Sabit; şimdilik koda gömülü (01.11.2007). Şimdilik dokunulmayacak |
+| Dönem | **Ekim 2008** (Kemal, 16 Kasım 2026; eski hâli "2007 sonu – 2008") |
+| Masadaki tarih | Sabit; şimdilik koda gömülü (01.11.2007). Dönemle uyuşmuyor ama şimdilik dokunulmayacak: Kemal oyunu baştan, sorularla ve yeni çizimlerle ele alacak; kod o zaman Ekim 2008'e göre değişir (Kemal, 16 Kasım 2026) |
 
 README'deki öbür bilgiler (2D vektörel minimalist stil, yalnız fare,
 üç bölgeli ekran) değişmedi; ayrıntı orada.
@@ -37,4 +37,5 @@ koleksiyon sayfası. Ayrıntı: Kems-Ajans deposunda `docs/pul-koleksiyonu.md`. 
 - Kazanma ve kaybetme: var mı, nasıl.
 - Gün yapısı: gün nasıl başlar ve biter, bir günde ne olur.
 - Ses: müzik ve efektler olacak mı, nasıl.
+- ~~Dönem: 2007 sonu – 2008 mi, Ekim 2008 mi?~~ Cevaplandı (Kemal, 16 Kasım): Ekim 2008 (bölüm 1). Masadaki tarih Imperial yeniden ele alınırken değişecek.
 - ~~Pul koleksiyonu (1.1): bu oyunda bir ayın pulu nasıl kazanılır?~~ Cevaplandı (Kemal, 15 Kasım): o ayın görevi bitince; her ay tek büyük görev. Görevlerin içerikleri [Kemal], ileride sorulacak.

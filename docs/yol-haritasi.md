@@ -1,6 +1,6 @@
 # The Imperial Kemskoy · Yol haritası
 
-Son güncelleme: **15 Kasım 2026**. Bu dosya her PR'da güncellenir. KKM'nin
+Son güncelleme: **16 Kasım 2026**. Bu dosya her PR'da güncellenir. KKM'nin
 oyun sayfası onu buradan okur. Kararların ayrıntısı `docs/tasarim-belgesi.md`'de;
 bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazılmaz.
 
@@ -9,7 +9,7 @@ bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazıl
 | | |
 |---|---|
 | Aşama | İskelet: tek ekran (lobi, misafir alanı, masa) yeni görünümle çiziliyor; henüz hiçbir şey çalışmıyor |
-| Son biten | Görsel yenileme: yeni renkler ve yazı tipleri, zengin lobi, misafir alanı ve masa çizimleri; oynanış değişmedi (bu PR) |
+| Son biten | Belge: dönem kararı, Ekim 2008 (Kemal, 16 Kasım 2026; öneri `ajans/donem-ekim-2008`); oyunda değişen yok. Önceki: görsel yenileme: yeni renkler ve yazı tipleri, zengin lobi, misafir alanı ve masa çizimleri; oynanış değişmedi |
 | Öncelik | Bekleyebilir; şimdilik belgeler. Ajansta öncelik DK Lite (Kemal, 4 Kasım) |
 | Yayın | Deneme sürümü GitHub Pages'te: https://hkemal94.github.io/TheImperialKemskoy/ ; tarih yok |
 | KKM | 11 Kasım: resepsiyon ekranı KKM'de kapak, otelin logosu künyede (`docs/logo.webp`) |
@@ -26,12 +26,13 @@ bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazıl
 - Yayın GitHub Pages'e taşındı (15 Kasım 2026, Kemal: "Imperial'i Vercel'den çekelim"): ana dala her birleştirmede kendiliğinden yayınlanır; `vercel.json` silindi
 - Görsel yenileme (15 Kasım 2026, Kemal: "Evet, yalnız görünüm"): yeni renk paleti; Nunito ve IBM Plex Mono yazı tipleri (`docs/lisanslar.md`); lobide kemerli pencerelerden deniz, sarmaşıklar, saksılar, avizeler; misafir alanında lambri, tablo, saat; masada telefon, monitör, kart makinesi ve anahtar panosu yeniden çizildi. Anahtar panosu aynı düzende (her sıra bir kat); masadaki tarih aynı (01.11.2007)
 
+- Dönem kararı (16 Kasım 2026, Kemal): oyun **Ekim 2008**'de geçer (belge 1). Dönem kararı verildi; kod Imperial yeniden ele alınırken değişecek: masadaki tarih (01.11.2007) şimdilik aynı kalır, çünkü Kemal oyunu baştan, sorularla ve yeni çizimlerle ele alacak
+
 ## Bekleyenler (Kemal'in kararı)
 
 - Oynanış döngüsünün ayrıntısı
 - Kazanma ve kaybetme
 - Gün yapısı
 - Ses
-- Dönem: 2007 sonu – 2008 mi, Ekim 2008 mi (masadaki tarih buna göre değişecek)
 - Karakter, misafir ve mekân adları (Kemal'in)
 - Pul koleksiyonu (15 Kasım 2026, belge 1.1; bütün oyunların ortak ödülü): ayın pulu o ayın görevi bitince gelir (Kemal, 15 Kasım); her ayın görevinin içeriği [Kemal], ileride sorulacak
