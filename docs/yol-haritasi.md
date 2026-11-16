@@ -8,31 +8,43 @@ bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazıl
 
 | | |
 |---|---|
-| Aşama | İskelet: tek ekran (lobi, misafir alanı, masa) yeni görünümle çiziliyor; henüz hiçbir şey çalışmıyor |
-| Son biten | Belge: dönem kararı, Ekim 2008 (Kemal, 16 Kasım 2026; öneri `ajans/donem-ekim-2008`); oyunda değişen yok. Önceki: görsel yenileme: yeni renkler ve yazı tipleri, zengin lobi, misafir alanı ve masa çizimleri; oynanış değişmedi |
-| Öncelik | Bekleyebilir; şimdilik belgeler. Ajansta öncelik DK Lite (Kemal, 4 Kasım) |
-| Yayın | Deneme sürümü GitHub Pages'te: https://hkemal94.github.io/TheImperialKemskoy/ ; tarih yok |
+| Aşama | **Baştan** (Kemal, 16 Kasım 2026). Sorular bitti; sırada görsel dil denemeleri |
+| Son biten | Belge: baştan kararlar (Kemal'in 18 cevabı, tasarım belgesi 0. bölüm; öneri `ajans/bastan-kararlar`); oyunda değişen yok |
+| Eski çalışma | `claude/exciting-ride-wteyia` dalından hiçbir şey alınmaz (Kemal, 16 Kasım) |
+| Yayın | Deneme sürümü GitHub Pages'te: https://hkemal94.github.io/TheImperialKemskoy/ ; içinde eski iskelet duruyor; tarih yok |
 | KKM | 11 Kasım: resepsiyon ekranı KKM'de kapak, otelin logosu künyede (`docs/logo.webp`) |
 
-## Sıradaki
+## Sıra (baştan plan, tasarım belgesi 8. bölüm)
 
-- Şimdilik yok; Kemal'in kararlarını bekliyor (aşağıda).
+1. Sorular (Oyun Tasarımcısı): **bitti** (16 Kasım 2026)
+2. Görsel dil denemeleri (İllüstratör): 2–3 deneme: **sırada**
+3. Kemal bir görsel dil seçer
+4. Çizimler (İllüstratör), seçilen dille
+5. Kod (Oyun Geliştiricisi), yalnız onaylı çizimlerle, öneri PR'ıyla
 
 ## Bitenler
 
-- Kemal'in 4 Kasım kararları: otel tabelası "The Imperial Kemsköy" (ö ile); kullanılmayan "1954'ten beri" yazısı silindi; tasarım belgesi ve bu yol haritası açıldı
-- Anahtar panosu 4 × 5'e göre (101–105, 201–205, 301–305, 401–405); eskiden 2 kat × 10 (101–110, 201–210)
-- Otel katları (14 Kasım 2026, Kemal): giriş katı + 4 oda katı + kuleler; belgede "4 oda katı × 5 oda (giriş katı ayrı)"; oda numaraları aynı, oyunda değişen yok
-- Yayın GitHub Pages'e taşındı (15 Kasım 2026, Kemal: "Imperial'i Vercel'den çekelim"): ana dala her birleştirmede kendiliğinden yayınlanır; `vercel.json` silindi
-- Görsel yenileme (15 Kasım 2026, Kemal: "Evet, yalnız görünüm"): yeni renk paleti; Nunito ve IBM Plex Mono yazı tipleri (`docs/lisanslar.md`); lobide kemerli pencerelerden deniz, sarmaşıklar, saksılar, avizeler; misafir alanında lambri, tablo, saat; masada telefon, monitör, kart makinesi ve anahtar panosu yeniden çizildi. Anahtar panosu aynı düzende (her sıra bir kat); masadaki tarih aynı (01.11.2007)
+- Baştan kararlar (16 Kasım 2026, Kemal): öz (resepsiyon, belge karşılaştırma, işletme, hikâye harmanı), adsız resepsiyonist, vardiya günü, bütün masa işleri, zorluğa göre açılan beceriler, birinci şahıs masa arkası, yatay ekran ve dokunma + fare, lobi + iç avlu + sağa sola bakış, anahtar panosu ve oda kartları, personel telefonla, hikâye ve sandbox modları, iki tür ayın görevi, seçmeli konuşma (metinler ajanlardan taslak, Kemal onaylar), ortam sesi, web önce, para modeli şimdilik yok
+- Dönem kararı (16 Kasım 2026, Kemal): oyun **Ekim 2008**'de geçer
+- Pul koleksiyonu kararı (15 Kasım 2026): ayın pulu o ayın görevi bitince gelir
 
-- Dönem kararı (16 Kasım 2026, Kemal): oyun **Ekim 2008**'de geçer (belge 1). Dönem kararı verildi; kod Imperial yeniden ele alınırken değişecek: masadaki tarih (01.11.2007) şimdilik aynı kalır, çünkü Kemal oyunu baştan, sorularla ve yeni çizimlerle ele alacak
+### Eski, baştan (Kemal 16 Kasım: oyun baştan ele alınıyor)
+
+Aşağıdaki işler yapılmıştı; yeni planda esas alınmaz. Kod yeniden yazılana kadar oyunda durur.
+
+- Kemal'in 4 Kasım kararları: otel tabelası "The Imperial Kemsköy" (ö ile; karar geçerli); kullanılmayan "1954'ten beri" yazısı silindi; tasarım belgesi ve bu yol haritası açıldı
+- Anahtar panosu 4 × 5'e göre (101–105, 201–205, 301–305, 401–405); oda düzeni kararı geçerli
+- Otel katları (14 Kasım 2026, Kemal): giriş katı + 4 oda katı + kuleler (karar geçerli)
+- Yayın GitHub Pages'e taşındı (15 Kasım 2026): ana dala her birleştirmede kendiliğinden yayınlanır (geçerli)
+- Görsel yenileme (15 Kasım 2026): yeni renkler, Nunito ve IBM Plex Mono, lobi, misafir alanı ve masa çizimleri: eski, baştan; görsel dil yeniden seçilecek
+- Eski iskelet (üç bölgeli tek ekran, yalnız fare, masadaki tarih 01.11.2007): eski, baştan
 
 ## Bekleyenler (Kemal'in kararı)
 
-- Oynanış döngüsünün ayrıntısı
-- Kazanma ve kaybetme
-- Gün yapısı
-- Ses
-- Karakter, misafir ve mekân adları (Kemal'in)
-- Pul koleksiyonu (15 Kasım 2026, belge 1.1; bütün oyunların ortak ödülü): ayın pulu o ayın görevi bitince gelir (Kemal, 15 Kasım); her ayın görevinin içeriği [Kemal], ileride sorulacak
+- Görsel dil (denemelerden seçim)
+- Hikâye ve sandbox modlarının ayrıntısı
+- Zorluk seviyeleri ve hangi becerinin hangi seviyede açık olduğu
+- Kaybetme hangi modda, hangi biçimde
+- Oyuncunun ileride adı olacak mı
+- Ayın görevlerinin içerikleri (iki tür)
+- Karakter, misafir, personel ve mekân adları (Kemal'in)
