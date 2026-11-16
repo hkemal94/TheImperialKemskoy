@@ -5,7 +5,7 @@ tarzında: masada oturuyorsunuz, misafirler geliyor, evrakla ve dönemin
 araçlarıyla uğraşıyorsunuz.
 
 - **Mekân:** 1954 yapımı, 20 odalı, eski ve lüks bir Ege oteli.
-- **Dönem:** 2007 sonu – 2008.
+- **Dönem:** Ekim 2008 (Kemal 16 Kasım; koddaki tarih oyun baştan ele alınırken değişir).
 - **Görsel stil:** 2D, vektörel, minimalist. Sakin Ege renkleri, dönem evrakı.
 - **Kontrol:** Yalnızca fare.
 
