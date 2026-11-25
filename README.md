@@ -7,7 +7,7 @@ karşılaştırma, otel işletme ve misafirlerden sezilen hikâyenin harmanı.
 
 - **Mekân:** 1954 yapımı, 20 odalı, eski ve lüks bir Ege oteli.
 - **Dönem:** Ekim 2008 (hikâye modunda takvim ilerler, sandbox modunda hep Ekim 2008).
-- **Görsel stil:** yeniden seçilecek (İllüstratör'ün 2–3 denemesinden Kemal seçer).
+- **Görsel stil:** mekân kalem-suluboya, karakterler Canva'da kâğıt kukla (Kemal, 25 Kasım 2026; tasarım belgesi 0.3).
 - **Kontrol:** yatay ekran; dokunma ve fare. Önce web.
 
 > Şu anki durum: depoda eski iskelet duruyor (aşağıdaki ekran düzeni ve
