@@ -35,8 +35,14 @@ Kaynak: Kems Ajans `oneriler/imperial-yeniden-soru-seti-16-11-2026.md` (soru a1�
   (kalem-suluboya çizilir, kukla gibi parçalı). Resepsiyon dizisiyle aynı dil; 6 Kasım kararıyla örtüşür.
   Kemal denemelerden 1. ve 2.'nin dilini seçti (Kems Ajans `raporlar/imperial-gorsel-dil-25-11-2026/`).
 - **Otel binasının biçimi** (Kemal, 25 Kasım 2026): KKM'deki tek harita modelinden ve planlarından alınır
-  (otel kalıbı, cep plajı; KKM `public/harita`, `gen/`). Tarife dışarıdan bir şey eklenmez; denemelerdeki
-  U biçim ve kiremit çatı ajansın eklemesiydi, kanon değil.
+  (otel kalıbı, cep plajı; KKM `public/harita`, `gen/`). Tarife dışarıdan bir şey eklenmez.
+  - **Kaynak:** KKM `public/viki/imperial-giris-kati-plani.jpg` (giriş katı planı, Kemal'in çizimi,
+    4 Kasım; planın kendi notu "taslak") ve KKM'deki tek harita modeli.
+  - **Biçim (giriş katı planından):** U biçim; ön cephe 48 m, iki kol 12 m geniş ve 48 m uzun, aralarında
+    24 × 36 m iç avlu, arkaya açık. Ön (deniz) yanının iki köşesinde birer yuvarlak kule.
+  - **Çatı:** KKM modelinde kiremit kırmızısı. Çatı rengi Kemal'e soruldu; cevap gelene kadar KKM modelindeki gibi.
+  - Düzeltme (25 Kasım 2026): bu bölümün önceki hâlinde "U biçim ve kiremit çatı ajansın eklemesiydi, kanon
+    değil" yazıyordu; yanlıştı. U biçim ve iç avlu KKM planında, kiremit çatı KKM modelinde var.
 - **Kamera:** masanın arkasından, birinci şahıs.
 - **Ekran:** yatay; dokunma ve fare ikisi de çalışır.
 
