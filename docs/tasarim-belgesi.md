@@ -1,6 +1,6 @@
 # The Imperial Kemskoy · Tasarım belgesi
 
-Son güncelleme: **16 Kasım 2026**. Bu belge oyunun tek kaynağıdır; kısa
+Son güncelleme: **25 Kasım 2026**. Bu belge oyunun tek kaynağıdır; kısa
 tutulur: yalnız Kemal'in verdiği kararlar ve açık sorular. Kurgu metni,
 karakter ve misafir adları burada yazılmaz (Kemal'in). Bir karar değişirse
 önce bu belge, sonra kod güncellenir. Düzada bilgisi yalnız KKM'deki
@@ -31,7 +31,12 @@ Kaynak: Kems Ajans `oneriler/imperial-yeniden-soru-seti-16-11-2026.md` (soru a1�
 
 ### 0.3 Görünüş, kamera, ekran
 
-- **Görsel dil:** karar bekliyor. İllüstratör 2–3 deneme yapar, Kemal seçer (8. bölüm, "Baştan plan").
+- **Görsel dil** (Kemal, 25 Kasım 2026): mekân kalem ve suluboya; karakterler Canva'da kâğıt kukla
+  (kalem-suluboya çizilir, kukla gibi parçalı). Resepsiyon dizisiyle aynı dil; 6 Kasım kararıyla örtüşür.
+  Kemal denemelerden 1. ve 2.'nin dilini seçti (Kems Ajans `raporlar/imperial-gorsel-dil-25-11-2026/`).
+- **Otel binasının biçimi** (Kemal, 25 Kasım 2026): KKM'deki tek harita modelinden ve planlarından alınır
+  (otel kalıbı, cep plajı; KKM `public/harita`, `gen/`). Tarife dışarıdan bir şey eklenmez; denemelerdeki
+  U biçim ve kiremit çatı ajansın eklemesiydi, kanon değil.
 - **Kamera:** masanın arkasından, birinci şahıs.
 - **Ekran:** yatay; dokunma ve fare ikisi de çalışır.
 
@@ -91,7 +96,7 @@ Aşağıdakiler 4 Kasım'dan ve README'nin eski hâlinden kalma; 0. bölümle ye
 | Konu | Eski | Yerine |
 |---|---|---|
 | Yön | Yalnız masa başı resepsiyon ve evrak | 0.1: dört şeyin harmanı |
-| Görsel stil | 2D, vektörel, minimalist | 0.3: görsel dil denemelerle seçilecek |
+| Görsel stil | 2D, vektörel, minimalist | 0.3: kalem-suluboya mekân, kâğıt kukla karakterler (25 Kasım) |
 | Kontrol | Yalnız fare | 0.3: dokunma ve fare |
 | Ekran düzeni | Üç yatay bölge (lobi, misafir, masa) | 0.3–0.4: masa arkasından birinci şahıs; lobi, iç avlu, sağa sola bakış |
 | Öncelik | "Bekleyebilir; şimdilik yalnız belgeler" | 8. bölüm: baştan plan sırası |
@@ -109,13 +114,13 @@ görevin iki türü var (0.5); içerikleri [Kemal].
 
 ## 7. Açık sorular (Kemal'in kararını bekliyor)
 
-- **Görsel dil:** İllüstratör'ün 2–3 denemesinden hangisi? (8. bölüm, 2–3. adım)
 - **Modlar:** hikâye modu ve sandbox modu tam olarak nasıl ayrışır (ne açık, ne kapalı, oyun hangisiyle açılır)?
 - **Zorluk seviyeleri:** kaç seviye, hangi beceriler (oda dağıtma, tutarsızlık yakalama, hız, doğru cevap) hangi seviyede açık? Sayılar [Kemal].
 - **Kaybetme hangi modda:** memnuniyet, gün sonu değerlendirmesi, çok hatada bitiş; hangisi hangi mod ve zorlukta?
 - **Oyuncunun adı:** resepsiyonist ileride bir ad alacak mı? (Ad Kemal'in.)
 - Ayın görevlerinin içerikleri (iki tür, 0.5): [Kemal].
 - Karakter, misafir, personel ve mekân adları: [Kemal].
+- ~~Görsel dil: İllüstratör'ün denemelerinden hangisi?~~ Cevaplandı (Kemal, 25 Kasım): kalem-suluboya mekân, kâğıt kukla karakterler (0.3).
 - ~~Oynanış döngüsü, kazanma/kaybetme, gün yapısı, ses~~ Cevaplandı (Kemal, 16 Kasım): 0. bölüm.
 - ~~Dönem: 2007 sonu – 2008 mi, Ekim 2008 mi?~~ Cevaplandı (Kemal, 16 Kasım): Ekim 2008.
 - ~~Pul koleksiyonu (1.1): bu oyunda bir ayın pulu nasıl kazanılır?~~ Cevaplandı (Kemal, 15 Kasım): o ayın görevi bitince; her ay tek büyük görev.
@@ -125,9 +130,9 @@ görevin iki türü var (0.5); içerikleri [Kemal].
 Her adım bir öncekinin onayıyla başlar; acele yok, tarih yazılmaz.
 
 1. **Sorular** (Oyun Tasarımcısı): bitti. Kemal'in cevapları bu belgenin 0. bölümünde.
-2. **Görsel dil denemeleri** (İllüstratör): 2–3 farklı deneme; masa arkasından birinci şahıs, yatay ekran,
-   lobi ve iç avlu. Otelin yeri ve yapısı yalnız künyeden alınır.
-3. **Kemal seçer:** bir görsel dil; seçim bu belgeye yazılır.
-4. **Çizimler** (İllüstratör): seçilen dille ekranlar ve parçalar.
+2. **Görsel dil denemeleri** (İllüstratör): bitti (25 Kasım 2026); üç deneme.
+3. **Kemal seçer:** bitti (25 Kasım 2026). Kalem-suluboya mekân, Canva'da kâğıt kukla karakterler (0.3).
+4. **Çizimler** (İllüstratör): seçilen dille ekranlar ve parçalar; önce mekân (kalem-suluboya). Otel binasının
+   biçimi KKM'deki otel modelinden ve planlarından alınır, ek uydurma yok (0.3).
 5. **Kod** (Oyun Geliştiricisi): yalnız Kemal'in onayladığı çizimlerle, ayrı dalda öneri PR'ıyla.
    Şu anki iskelet kod bu adıma kadar olduğu gibi durur.
