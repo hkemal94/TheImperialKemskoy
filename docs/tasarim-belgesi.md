@@ -40,7 +40,7 @@ Kaynak: Kems Ajans `oneriler/imperial-yeniden-soru-seti-16-11-2026.md` (soru a1�
     4 Kasım; planın kendi notu "taslak") ve KKM'deki tek harita modeli.
   - **Biçim (giriş katı planından):** U biçim; ön cephe 48 m, iki kol 12 m geniş ve 48 m uzun, aralarında
     24 × 36 m iç avlu, arkaya açık. Ön (deniz) yanının iki köşesinde birer yuvarlak kule.
-  - **Çatı:** KKM modelinde kiremit kırmızısı. Çatı rengi Kemal'e soruldu; cevap gelene kadar KKM modelindeki gibi.
+  - **Çatı:** kiremit kırmızısı, KKM modelindeki gibi (Kemal onayladı, 25 Kasım 2026).
   - Düzeltme (25 Kasım 2026): bu bölümün önceki hâlinde "U biçim ve kiremit çatı ajansın eklemesiydi, kanon
     değil" yazıyordu; yanlıştı. U biçim ve iç avlu KKM planında, kiremit çatı KKM modelinde var.
 - **Kamera:** masanın arkasından, birinci şahıs.
