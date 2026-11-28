@@ -1,6 +1,6 @@
 # The Imperial Kemskoy · Yol haritası
 
-Son güncelleme: **25 Kasım 2026**. Bu dosya her PR'da güncellenir. KKM'nin
+Son güncelleme: **28 Kasım 2026**. Bu dosya her PR'da güncellenir. KKM'nin
 oyun sayfası onu buradan okur. Kararların ayrıntısı `docs/tasarim-belgesi.md`'de;
 bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazılmaz.
 
@@ -24,6 +24,7 @@ bu sayfa yalnız nerede olduğumuzu ve sırayı gösterir. Tarih ve süre yazıl
 
 ## Bitenler
 
+- Mekân çizimlerinin ilk taslakları (28 Kasım 2026, İllüstratör): lobi, dış görünüş, resepsiyon arkası ve KKM modeliyle yan yana pano `docs/gorseller/mekan/` altında; yapay zekâ taslağı, Kemal onaylamadı, kanon değil. Çatı kararı (25 Kasım 2026, Kemal): kiremit kırmızısı, KKM modelindeki gibi
 - Görsel dil kararı (25 Kasım 2026, Kemal): mekân kalem-suluboya, karakterler Canva'da kâğıt kukla (denemelerden 1. ve 2.'nin dili); otel binasının biçimi KKM'deki otel modelinden ve planlarından, ek uydurma yok
 - Baştan kararlar (16 Kasım 2026, Kemal): öz (resepsiyon, belge karşılaştırma, işletme, hikâye harmanı), adsız resepsiyonist, vardiya günü, bütün masa işleri, zorluğa göre açılan beceriler, birinci şahıs masa arkası, yatay ekran ve dokunma + fare, lobi + iç avlu + sağa sola bakış, anahtar panosu ve oda kartları, personel telefonla, hikâye ve sandbox modları, iki tür ayın görevi, seçmeli konuşma (metinler ajanlardan taslak, Kemal onaylar), ortam sesi, web önce, para modeli şimdilik yok
 - Dönem kararı (16 Kasım 2026, Kemal): oyun **Ekim 2008**'de geçer
